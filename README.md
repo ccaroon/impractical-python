@@ -7,3 +7,6 @@ Projects from the Impractial Python Projects book.
 
 ## Project #2 - Finding Palingram Spells
 * `find_palindromes.py` - Find all the palindromes in a word list.
+
+## Project #3 - Solving Anagrams
+* `anagrams.py` - Find anagrams of a given word.
