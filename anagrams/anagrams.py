@@ -26,6 +26,8 @@ def main():
     else:
         user_word = input("Enter a word: ")
 
+    user_word = user_word.lower()
+
     is_word = words.get(user_word, False)
     if is_word:
         anagrams = []
@@ -37,7 +39,10 @@ def main():
                 if a_word_chars == word_chars:
                     anagrams.append(a_word)
 
-        print(anagrams)
+        if anagrams:
+            print(*anagrams, sep=', ')
+        else:
+            print(F"No anagrams of '{user_word}' found.")
     else:
         print(F"'{user_word}' is not a know word.")
 
